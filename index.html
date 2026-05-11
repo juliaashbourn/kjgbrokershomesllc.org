@@ -1,128 +1,183 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HUNANIMA - Machines Agricoles Simples</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #fefefe;
-      color: #333;
-    }
-    header {
-      background-color: #2e7d32; /* Vert foncé */
-      color: #fdd835; /* Jaune vif */
-      padding: 20px;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.5em;
-    }
-    header p {
-      margin: 5px 0 0;
-      font-size: 1.2em;
-    }
-    nav {
-      background-color: #fdd835;
-      padding: 10px;
-      text-align: center;
-    }
-    nav a {
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-      color: #2e7d32;
-    }
-    .hero {
-      background: url('https://i.pinimg.com/550x/a9/df/51/a9df5172829f8c05f5b92f97553d41ae.jpg') no-repeat center center/cover;
-      height: 350px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      text-shadow: 2px 2px 4px #000;
-      font-size: 2em;
-    }
-    section {
-      padding: 50px 20px;
-      text-align: center;
-    }
-    section h2 {
-      color: #2e7d32;
-      margin-bottom: 20px;
-    }
-    .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-    }
-    .gallery img {
-      width: 280px;
-      height: 180px;
-      object-fit: cover;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    }
-    footer {
-      background-color: #2e7d32;
-      color: #fff;
-      text-align: center;
-      padding: 20px;
-    }
-    footer p {
-      margin: 5px 0;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KJG Brokers. Homes LLC | Premier Real Estate Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Montserrat:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Montserrat', sans-serif; }
+        .serif-title { font-family: 'Cormorant Garamond', serif; }
+        .hero-bg { 
+            background: linear-gradient(rgba(15, 23, 42, 0.6), rgba(15, 23, 42, 0.6)), 
+            url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=1920');
+            background-size: cover;
+            background-position: center;
+        }
+        .accent-gradient { background: linear-gradient(135deg, #0ea5e9 0%, #2563eb 100%); }
+        .glass-card { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); }
+    </style>
 </head>
-<body>
+<body class="bg-slate-50 text-slate-900">
 
-  <header>
-    <h1>HUNANIMA</h1>
-    <p>Machines Agricoles Simples et Fiables</p>
-  </header>
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-slate-100 py-5 px-8 flex justify-between items-center">
+        <div class="serif-title text-3xl font-bold tracking-tight text-blue-900">KJG BROKERS</div>
+        <div class="hidden lg:flex space-x-10 text-xs uppercase tracking-[0.2em] font-bold">
+            <a href="#home" class="hover:text-blue-600 transition">Portfolio</a>
+            <a href="#services" class="hover:text-blue-600 transition">Expertise</a>
+            <a href="#about" class="hover:text-blue-600 transition">About</a>
+            <a href="#privacy" class="hover:text-blue-600 transition">Privacy</a>
+            <a href="#contact" class="accent-gradient text-white px-6 py-2 rounded-full shadow-lg hover:shadow-blue-200 transition">Consult Now</a>
+        </div>
+    </nav>
 
-  <nav>
-    <a href="#about">À propos</a>
-    <a href="#gallery">Galerie</a>
-    <a href="#contact">Contact</a>
-  </nav>
+    <section id="home" class="h-screen flex items-center justify-center text-center hero-bg px-6">
+        <div class="max-w-5xl">
+            <h1 class="serif-title text-6xl md:text-8xl text-white mb-8 leading-tight drop-shadow-xl">Curating Extraordinary <span class="italic text-blue-400">Living Spaces</span></h1>
+            <p class="text-lg md:text-xl text-slate-200 font-light mb-12 max-w-2xl mx-auto leading-relaxed">Experience the pinnacle of real estate excellence with KJG Brokers. Homes LLC. We specialize in luxury residential properties and strategic investment consulting across Oregon.</p>
+            <div class="flex flex-col md:flex-row justify-center gap-6">
+                <a href="#services" class="accent-gradient text-white px-12 py-5 rounded-full font-bold text-lg hover:scale-105 transition-all">Explore Expertise</a>
+                <a href="#contact" class="bg-white text-blue-900 px-12 py-5 rounded-full font-bold text-lg hover:bg-slate-100 transition-all">Direct Contact</a>
+            </div>
+        </div>
+    </section>
 
-  <div class="hero">
-    <p>Votre partenaire pour des machines agricoles durables</p>
-  </div>
+    <section class="py-32 px-8 lg:px-24">
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="group relative overflow-hidden rounded-3xl h-[500px] shadow-2xl">
+                <img src="https://images.unsplash.com/photo-1600607687940-4e524cb35a3a?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover group-hover:scale-110 transition duration-700" alt="Estate">
+                <div class="absolute inset-0 bg-gradient-to-t from-blue-900/90 to-transparent flex flex-col justify-end p-10">
+                    <h3 class="serif-title text-3xl text-white">Modern Waterfront</h3>
+                    <p class="text-blue-200 text-sm mt-2">Residential Excellence</p>
+                </div>
+            </div>
+            <div class="group relative overflow-hidden rounded-3xl h-[500px] shadow-2xl lg:translate-y-12">
+                <img src="https://images.unsplash.com/photo-1600566753190-17f0bb2a6c3e?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover group-hover:scale-110 transition duration-700" alt="Luxury Interior">
+                <div class="absolute inset-0 bg-gradient-to-t from-blue-900/90 to-transparent flex flex-col justify-end p-10">
+                    <h3 class="serif-title text-3xl text-white">Urban Penthouse</h3>
+                    <p class="text-blue-200 text-sm mt-2">Strategic Location</p>
+                </div>
+            </div>
+            <div class="group relative overflow-hidden rounded-3xl h-[500px] shadow-2xl">
+                <img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover group-hover:scale-110 transition duration-700" alt="Architecture">
+                <div class="absolute inset-0 bg-gradient-to-t from-blue-900/90 to-transparent flex flex-col justify-end p-10">
+                    <h3 class="serif-title text-3xl text-white">Minimalist Haven</h3>
+                    <p class="text-blue-200 text-sm mt-2">Premium Quality</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <section id="about">
-    <h2>À propos de nous</h2>
-    <p>
-      Chez <strong>HUNANIMA</strong>, nous nous spécialisons dans la fabrication et la distribution de 
-      <strong>machines agricoles simples</strong> pour faciliter le travail des agriculteurs. 
-      Nos solutions combinent <em>durabilité, efficacité et innovation</em> afin de répondre aux besoins de toutes les exploitations.
-    </p>
-  </section>
+    <section id="services" class="py-32 bg-white px-8 lg:px-24">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col lg:flex-row items-end justify-between mb-24">
+                <div class="max-w-2xl">
+                    <h2 class="serif-title text-5xl text-blue-950 mb-6">Brokerage Reimagined</h2>
+                    <p class="text-slate-500 text-lg leading-relaxed">At KJG Brokers. Homes LLC, we combine local Oregon market expertise with a global perspective on luxury real estate. Our team is dedicated to providing a seamless experience for buyers, sellers, and investors alike.</p>
+                </div>
+                <div class="h-px bg-blue-100 flex-grow mx-12 hidden lg:block mb-6"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-16">
+                <div class="flex gap-8">
+                    <div class="text-blue-600 text-4xl font-black opacity-20">01</div>
+                    <div>
+                        <h4 class="text-xl font-bold mb-4 uppercase tracking-widest">Buyer Representation</h4>
+                        <p class="text-slate-500 leading-relaxed italic">Dedicated search and acquisition strategies tailored to your lifestyle and financial goals.</p>
+                    </div>
+                </div>
+                <div class="flex gap-8">
+                    <div class="text-blue-600 text-4xl font-black opacity-20">02</div>
+                    <div>
+                        <h4 class="text-xl font-bold mb-4 uppercase tracking-widest">Exclusive Listing Services</h4>
+                        <p class="text-slate-500 leading-relaxed italic">High-impact marketing and positioning for sellers looking to maximize asset value.</p>
+                    </div>
+                </div>
+                <div class="flex gap-8">
+                    <div class="text-blue-600 text-4xl font-black opacity-20">03</div>
+                    <div>
+                        <h4 class="text-xl font-bold mb-4 uppercase tracking-widest">Investment Consulting</h4>
+                        <p class="text-slate-500 leading-relaxed italic">In-depth market analysis and portfolio optimization for real estate investors.</p>
+                    </div>
+                </div>
+                <div class="flex gap-8">
+                    <div class="text-blue-600 text-4xl font-black opacity-20">04</div>
+                    <div>
+                        <h4 class="text-xl font-bold mb-4 uppercase tracking-widest">Portfolio Management</h4>
+                        <p class="text-slate-500 leading-relaxed italic">Strategic oversight for offices of real estate agents and brokers.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <section id="gallery">
-    <h2>Nos Machines</h2>
-    <div class="gallery">
-      <img src="http://ogden_images.s3.amazonaws.com/www.motherearthnews.com/images/2014/11/22234423/Boaz-Mini-Combine-jpg.jpg" alt="Mini moissonneuse">
-      <img src="https://krs-agro.ru/products/zagotovka_kormov/elho/19/7.jpg" alt="Machine agricole">
-      <img src="https://img.mod-network.net/files/images/6218ac69d37fb/SimpleFarmSilov1000_6222.jpg" alt="Équipement agricole simple">
-    </div>
-  </section>
+    <section id="about" class="py-32 bg-slate-950 text-white px-8 lg:px-24">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="serif-title text-4xl mb-10">Our Oregon Foundation</h2>
+            <p class="text-slate-400 text-lg leading-loose mb-8">KJG Brokers. Homes LLC operates as a premier real estate entity headquartered in Portland, Oregon. Under the leadership of Key Principal Kevin L Gilligan, we have established a reputation for integrity and unparalleled market insight.</p>
+            <div class="flex justify-center items-center space-x-12 mt-16 grayscale opacity-60">
+                <div class="font-black text-2xl uppercase tracking-[0.3em]">Integrity</div>
+                <div class="font-black text-2xl uppercase tracking-[0.3em]">Precision</div>
+                <div class="font-black text-2xl uppercase tracking-[0.3em]">Luxury</div>
+            </div>
+        </div>
+    </section>
 
-  <section id="contact">
-    <h2>Contactez-nous</h2>
-    <p><strong>Email :</strong> admin@tyusex.shop</p>
-    <p><strong>Téléphone :</strong> +33 7 38 50 26 36</p>
-    <p><strong>Adresse :</strong> Avenue Baratier, Montmorency, 95160, France</p>
-  </section>
+    <section id="privacy" class="py-32 bg-slate-50 px-8 lg:px-24">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="serif-title text-3xl mb-8 text-center text-blue-950 uppercase tracking-widest">Privacy Policy & Disclosure</h2>
+            <div class="bg-white p-12 rounded-3xl shadow-xl h-80 overflow-y-scroll text-xs text-slate-500 leading-relaxed border border-slate-200">
+                <p class="mb-6 font-bold text-slate-900 text-sm">Last Revision: May 11, 2026</p>
+                <p class="mb-4">KJG Brokers. Homes LLC ("we," "us," or "our") is committed to protecting the privacy and security of your personal data. This policy describes our practices regarding the collection and use of information provided via our website and mobile platform.</p>
+                
+                <h4 class="font-extrabold text-slate-800 mt-6 mb-2">1. INFORMATION WE COLLECT</h4>
+                <p class="mb-4">We collect personal identifiers such as name, email address (e.g., support@kjgbrokershomesllc.org), and phone number when you voluntarily submit inquiries. This data is used solely to facilitate real estate consultations and professional brokerage services.</p>
+                
+                <h4 class="font-extrabold text-slate-800 mt-6 mb-2">2. DATA PROTECTION & SHARING</h4>
+                <p class="mb-4">We do not sell, trade, or rent your personal information to third parties. Data is protected using industry-standard administrative and technical safeguards to prevent unauthorized access or disclosure.</p>
+                
+                <h4 class="font-extrabold text-slate-800 mt-6 mb-2">3. COMPLIANCE</h4>
+                <p>Our operations comply with the Fair Housing Act and relevant real estate regulations in the state of Oregon.</p>
+            </div>
+        </div>
+    </section>
 
-  <footer>
-    <p>&copy; 2025 HUNANIMA - Tous droits réservés.</p>
-  </footer>
+    <footer id="contact" class="bg-white border-t border-slate-100 pt-32 pb-12 px-8 lg:px-24">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-24">
+            <div>
+                <h4 class="serif-title text-4xl text-blue-950 mb-8">Secure Your Future Portfolio</h4>
+                <div class="space-y-8">
+                    <div class="flex items-center gap-6 group">
+                        <div class="w-12 h-12 bg-blue-50 rounded-full flex items-center justify-center text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition">✉</div>
+                        <a href="mailto:support@kjgbrokershomesllc.org" class="text-2xl font-bold hover:text-blue-600 transition">support@kjgbrokershomesllc.org</a>
+                    </div>
+                    <div class="flex items-center gap-6 group">
+                        <div class="w-12 h-12 bg-blue-50 rounded-full flex items-center justify-center text-blue-600 group-hover:bg-blue-600 group-hover:text-white transition">☎</div>
+                        <a href="tel:15159729964" class="text-2xl font-bold hover:text-blue-600 transition">+1 515-972-9964</a>
+                    </div>
+                </div>
+            </div>
+            <div class="lg:text-right">
+                <p class="text-slate-400 text-sm uppercase tracking-widest mb-4">Official Oregon Office</p>
+                <p class="text-2xl font-light leading-tight text-blue-950">
+                    5020 NE M L King Blvd<br>
+                    Portland, OR, 97211-3204<br>
+                    United States
+                </p>
+            </div>
+        </div>
+        <div class="mt-32 pt-8 border-t border-slate-100 text-center flex flex-col md:flex-row justify-between items-center gap-4">
+            <p class="text-[10px] tracking-[0.5em] text-slate-400 uppercase font-black">
+                &copy; 2026 KJG BROKERS. HOMES LLC.
+            </p>
+            <div class="flex gap-8 text-[10px] tracking-[0.2em] font-black uppercase text-slate-400">
+                <span>Portland, OR</span>
+                <span>Luxury Real Estate</span>
+            </div>
+        </div>
+    </footer>
 
 </body>
 </html>
